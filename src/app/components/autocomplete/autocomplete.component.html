@@ -1,0 +1,10 @@
+<input
+  type="text"
+  name="name"
+  placeholder="Searching..."
+  [value]="keyword$ | async"
+  (input)="changeKeyword($event.target?.value)"
+/>
+<ul *ngFor="let result of results$ | async | slice: 0:9">
+  <app-searchresultitem [name]="result.login"></app-searchresultitem>
+</ul>

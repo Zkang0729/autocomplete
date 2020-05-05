@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-autocomplete"
+    }
+  },
+  "defaultProject": "angular-autocomplete",
+  "cli": {
+    "analytics": "1a526b74-1d0e-4b6a-b041-707a72f7944b"
+  }
 }
